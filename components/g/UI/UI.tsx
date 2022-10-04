@@ -18,10 +18,10 @@ export const UI: React.FC<{
 
             <div className="py-6 text-sm text-center">
                 <div>
-                    <A href="https://github.com/eudpna/chord-search">GitHubでソースを見る</A>
+                    <A href="https://github.com/Fingerstyle-Taiwan/chord-search">GitHub</A>
                 </div>
                 <div className="my-4">
-                    <A href="https://nyaw.net">nyaw.net</A>
+                    <A href="https://github.com/Fingerstyle-Taiwan">Fingerstyle Taiwan</A>
                 </div>
             </div>
         </div>
