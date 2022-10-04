@@ -8,7 +8,7 @@ import { G } from '../components/g/G'
 const Index: React.FC<{}> = () => {
     return <>
         <Head>
-            <title>ギターコード検索</title>
+            <title>吉他和弦圖書館</title>
         </Head>
         <Container>
             <div lang="ja" className="w-full pt-10">

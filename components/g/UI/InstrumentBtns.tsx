@@ -16,14 +16,14 @@ export const InstrumentBtns: React.FC<{
                         state.instrument = 'guitar'
                         search(props.gctx)
                         gctx.render()
-                    }}>ギター</button>
-                <button 
+                    }}>吉他</button>
+                <button
                     onClick={() => {
                         state.instrument = 'ukulele'
                         search(props.gctx)
                         gctx.render()
                     }}
-                className={"text-center w-24 px-1 py-1 border-2 border-gray rounded-lg mx-1 my-3 " + (state.instrument === 'ukulele' ? 'bg-gray-200 ' : 'text-gray-300')}>ウクレレ</button>
+                className={"text-center w-24 px-1 py-1 border-2 border-gray rounded-lg mx-1 my-3 " + (state.instrument === 'ukulele' ? 'bg-gray-200 ' : 'text-gray-300')}>烏克麗麗</button>
         </div>
 
     </div>

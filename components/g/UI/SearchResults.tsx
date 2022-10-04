@@ -55,7 +55,7 @@ export const Position: React.FC<{
                 <SoundIcon />
             </div>
         </div>
-    
+
         <div className="my-3">
             <Chord
                 chord={props.position}
@@ -75,12 +75,12 @@ export const SearchResult: React.FC<{
     }>({
         isOpen: false
     })
-    
-    
+
+
     const gctx = props.gctx
     const c = props.chord
     const positions = !state.isOpen ? c.positions.slice(0, 1) : c.positions
-    
+
     return (
         <div key={gctx.state.instrument + c.key + c.suffix}
             className="w-full max-w-sm mx-auto border-2 my-4 rounded-lg cursor-pointer relative pb-2"
@@ -90,13 +90,13 @@ export const SearchResult: React.FC<{
                 gctx.render()
             }}
         >
-            {!state.isOpen ? <div className="p-1 absolute bottom-0 right-0 text-xs text-gray-400">タップしてバリエーションを表示</div> : null}
+            {!state.isOpen ? <div className="p-1 absolute bottom-0 right-0 text-xs text-gray-400">點擊查看其他形式</div> : null}
             <div className="w-full flex">
                 <div className="absolute top-0 left-0 text-gray-700 text-2xl flex-grow p-3">
                     <div className="ml-1 pl-2">
                         {chord2displayName(c)}
                     </div>
-                    
+
                 </div>
                 <div className="">
                     {positions.map((p, i) =>

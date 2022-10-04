@@ -7,9 +7,9 @@ const getChords = (instrument: 'guitar' | 'ukulele') => instrument === 'guitar' 
 export const SearchBox: React.FC<{
     gctx: GCtx
 }> = (props) => {
-    
+
     useEffect(() => {
-        
+
         setTimeout(() => {
             search(props.gctx)
             props.gctx.render()
@@ -21,14 +21,14 @@ export const SearchBox: React.FC<{
             className="mb-4 w-full p-2 px-5 rounded-full border-gray border-2"
             type="text"
             value={props.gctx.state.q}
-            placeholder={"コードを検索"}
+            placeholder={"和弦搜尋"}
             onChange={e => {
                 props.gctx.state.q = e.target.value
                 search(props.gctx)
                 props.gctx.render()
             }}
         />
-    </div>   
+    </div>
 }
 
 export function search(gctx: GCtx) {
